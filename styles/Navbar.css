@@ -1,0 +1,100 @@
+.Navbar {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100px;
+}
+
+.Navbar > a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.Routers {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #093e45;
+}
+
+.Routers > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+}
+
+.Routers > li > a {
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: inherit;
+  transition: 300ms all;
+
+  position: relative;
+}
+
+.Routers > li > a::before {
+  position: absolute;
+  content: "";
+  bottom: 1px;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-radius: 2px;
+  background-color: rgba(9, 62, 69, 0.4);
+  color: black;
+  transition: 200ms all;
+}
+
+.Routers > li > a:hover::before {
+  bottom: -2px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.SocialMedias {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.SocialMedias > a  {
+  margin-left: 10px;
+}
+
+.SocialMedias > a > img {
+  height: 25px;
+  transition: 200ms transform;
+}
+
+.SocialMedias > a > img:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 780px) {
+  .Navbar {
+    padding: 0 15px;
+    height: 60px;
+  }
+  .Routers {
+    display: none;
+  }
+
+  .SocialMedias > a > img {
+    height: 20px;
+  }
+}

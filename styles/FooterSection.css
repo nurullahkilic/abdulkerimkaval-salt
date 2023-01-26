@@ -1,0 +1,206 @@
+.FooterSection {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  background-color: #22c1c3;
+  padding: 40px 0 80px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.FooterLeftSide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 400px;
+}
+
+.FooterLeftSide > * {
+  margin: 0;
+}
+
+.FooterLeftSide > h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #093e45;
+}
+
+.FooterLeftSide > h5 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #093e45;
+}
+
+.ContactCardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-left: 80px;
+}
+
+.ContactCardBack {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -4px;
+  width: 420px;
+  height: 240px;
+  border-radius: 8px;
+  background: linear-gradient(
+    -83.39deg,
+    #42c9cc 6.87%,
+    #8feeef 53.63%,
+    white 100.4%
+  );
+  transform: rotate(1.2deg);
+}
+
+.ContactCard {
+  width: 450px;
+  height: 240px;
+  background: #092c31;
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  transform: rotate(-1deg);
+  border-bottom: 8px solid #b6dada;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 35px;
+}
+
+.ContactCard > img {
+  transform: translateY(-8px);
+  width: 130px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.ContactInfos {
+  color: #cbefef;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 58%;
+}
+
+.ContactInfos > h5 {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.ContactInfos > * {
+  margin: 0;
+}
+
+.ContactInfos a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.ContactInfos > ul {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  list-style: none;
+  color: white;
+  padding: 0;
+}
+
+.ContactInfos > ul > li {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ContactInfos > ul > li > img {
+  width: 16px;
+  margin-right: 10px;
+}
+
+.ContactInfos > ul > li > a {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ececec;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 780px) {
+  .FooterSection {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+  }
+
+  .FooterRightSide {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ContactCardWrapper {
+    width: 80%;
+    min-height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .ContactCardBack {
+    display: none;
+  }
+
+  .ContactCard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 20px;
+  }
+
+  .ContactInfos {
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .ContactCard > img {
+    width: 140px;
+    margin-right: 5px;
+  }
+
+
+.FooterLeftSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+}

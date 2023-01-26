@@ -1,0 +1,132 @@
+.HeroSection {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(180deg, rgba(34, 193, 195, 0) 25%, #22c1c3 100%);
+}
+
+.HeroContent {
+  flex: 1;
+  margin: 30px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.TextWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: right;
+  transform: translateX(16x);
+}
+
+.TextWrapper > h1 {
+  padding: 0;
+  margin: 0;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 70px;
+  color: #093e45;
+}
+
+.TextWrapper > h1:nth-child(3) {
+  transform: translateX(40px);
+}
+
+.SignatureImage {
+  position: absolute;
+  width: 400px;
+  bottom: -180px;
+  left: 0;
+}
+
+.UserImage {
+  width: 300px;
+  transform: translateY(10px);
+}
+
+.HeroTextContent {
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 500px;
+  margin-bottom: 60px;
+}
+
+.HeroBgText {
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #093e45;
+}
+
+.HeroSmText {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  color: #151515;
+}
+
+@media only screen and (max-width: 780px) {
+  .HeroSection {
+    height: fit-content;
+  }
+  .HeroContent {
+    flex-direction: column-reverse;
+    margin-bottom: 80px;
+  }
+  .UserImage {
+    width: 160px;
+    margin-bottom: 20px;
+  }
+
+.SignatureImage {
+    width: 70%;
+    bottom: -80px;
+    left: 0;
+  }
+  
+  .TextWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(0);
+  }
+  .TextWrapper > h1:nth-child(3) {
+    transform: translateX(50px);
+  }
+  .TextWrapper > h1 {
+    font-size: 50px;
+    line-height: 45px;
+    color: #093e45;
+  }
+  .HeroTextContent {
+    padding: 0 50px;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .HeroBgText {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  .HeroSmText {
+    font-size: 16px;
+  }
+}

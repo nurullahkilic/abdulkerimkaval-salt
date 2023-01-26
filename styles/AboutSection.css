@@ -1,0 +1,118 @@
+.AboutSection {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.AboutBox {
+  width: 600px;
+  height: fit-content;
+  background-color: #093e45;
+  border-radius: 8px;
+  background: linear-gradient(
+      0deg,
+      rgba(9, 62, 69, 0.89),
+      rgba(9, 62, 69, 0.89)
+    ),
+    url(/assets/png/box-back.png), rgba(204, 204, 204, 0.2);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 50px 180px 50px 50px;
+  transform: translateX(50px);
+}
+
+.AboutBox > h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.AboutBox > h3 > span {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.AboutBox > p {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: white;
+}
+
+.AboutBox > p > span {
+  margin-bottom: 20px;
+}
+
+.AboutBox > p > span:last-child {
+  margin-bottom: 0;
+}
+
+.AboutImage {
+  width: 400px;
+  height: 500px;
+  background-color: red;
+  border-radius: 8px;
+  transform: translateX(-100px) rotate(3deg);
+  position: relative;
+  overflow: hidden;
+}
+
+.AboutImage > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 780px) {
+  .AboutSection {
+    height: fit-content;
+    padding: 70px 0;
+  }
+  .AboutBox {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 30px;
+    border-radius: 0;
+    transform: translateX(0);
+    margin: 0 20px;
+    border-radius: 8px;
+  }
+  .AboutBox > h3 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+
+  .AboutBox > h3 > span {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .AboutBox > p {
+    font-size: 14px;
+  }
+
+  .AboutImage {
+    display: none;
+  }
+}
